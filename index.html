@@ -3,29 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <button id="start" style="display : none">Start</button>
-        <div id="quiz">
+        <div >View Highscore</div>
+        <div id="timer">Time: 0 second left</div>
+    </div>
+
+    <div id="container">
+        <h1>Code Quiz Challange</h1>
+        <div id="start">Start</div>
+        <div id="quiz" style="display: none">
             <div id="question"></div>
+
             <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+                <button class="choice" id="A" value="A"></button>
+                <button class="choice" id="B" value="B"></button>
+                <button class="choice" id="C" value="C"></button>
+                <button class="choice" id="D" value="D"></button>
+                <div id="result"></div>
             </div>
+
         </div>
-
-        <div id="quiz"></div>
-        <div id="score" style="display: none"></div>
-
-        <script src="script.js"></script>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
